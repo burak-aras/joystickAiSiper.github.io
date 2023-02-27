@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width; initial-scale=1.5; maximum-scale=0.9;user-scalable=no"
+    charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <script src="joy.js"></script>
+
+</head>
+
+<body>
+
+
+  <div class="video-container">
+    <p>Video Yayını</p>
+  </div>
+<div class="butonlar">
+    <div class="switch-butonlari">
+      <label class="switch">
+        <input type="checkbox" id="switch1">
+        <span class="slider"></span>
+        <div style="margin-left:50px;">Silah</div>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch2">
+        <span class="slider"></span>
+        <div style="margin-left:50px;">GeceGorus</div>
+      </label>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch3">
+        <span class="slider"></span>
+        <div style="margin-left:50px;">Goruntuİşleme</div>
+      </label>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch4">
+        <span class="slider"></span>
+        <div style="margin-left:50px;">MerdivenÇık</div>
+      </label>
+      </label>
+      <label class="switch">
+        <input type="checkbox" id="switch5">
+        <span class="slider"></span>
+        <div style="margin-left:50px;">HaritaMod</div>
+      </label>
+    </div>
+</div>
+
+  <div id="joyDiv" style="width:200px;height:200px;margin-bottom:25px; left: 20px;position: fixed;bottom: 20px;"></div>
+  <div id="joy2Div" style="width:200px;height:200px;margin-bottom:25px; position: fixed;bottom: 20px;right: 20px;">
+  </div>
+  <div class="video-container2">
+    <p>Gece Görüş Harita Silah Kamerası Falan Filan</p>
+  </div>
+  <div class="veriler">
+    <p style="text-align: center;">Sensör Verileri</p>
+    <div style="margin-left: 10px;">
+      <p> Mesafe: </p>
+      <p> Sıcaklık:</p>
+      <p> Nem:</p>
+      <p> Çekim Kalitesi:</p>
+  
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+    var joyParam = { "title": "joystick1", internalFillColor: '#2C74B3' ,internalStrokeColor:"#FFFFFF",externalStrokeColor:"#2C74B3"};
+    var joy = new JoyStick('joyDiv',joyParam);
+  </script>
+  <script type="text/javascript">
+    var joy2Param = { "title": "joystick2", internalFillColor: '#2C74B3' ,internalStrokeColor:"#FFFFFF",externalStrokeColor:"#2C74B3"};
+    var joy2 = new JoyStick('joy2Div',joy2Param);
+  </script>
+</body>
+
+</html>
